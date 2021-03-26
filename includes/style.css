@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+  font-family: "Ubuntu";
+  text-shadow: 5px 0 #232931;
+  font-size: 7rem;
+  color: dimgray;
+  margin: 50px;
+}
+body {
+  background-color: cadetblue;
+}
+main,
+.stats,
+.play1W,
+.play2W,
+.playT {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 50%;
+}
+.stats,
+.play1W,
+.play2W,
+.playT {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: dimgray;
+}
+.player-names {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 0 #b8b654;
+  font-size: 8rem;
+  color: dimgray;
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 50%;
+}
+
+#rollDice {
+  height: 5rem;
+  width: 12rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.rollDice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 50%;
+  height: 10rem;
+}

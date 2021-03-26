@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./includes/resets.css" />
+    <link rel="stylesheet" href="./includes/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+    <title>The Dice Game</title>
+  </head>
+  <body>
+    <h1>Click the "Roll Dice" button to Roll</h1>
+    <main>
+      <div class="leftSide">
+        <div class="player-names">
+          <h3>Player 1</h3>
+        </div>
+        <div class="leftDie"><img class="dice-img1" src="./images/dice1.png" /></div>
+      </div>
+      <div class="rightSide">
+        <div class="player-names">
+          <h3>Player 2</h3>
+        </div>
+        <div class="rightDie"><img class="dice-img2" src="./images/dice1.png" /></div>
+      </div>
+    </main>
+    <div class="rollDice"><button id="rollDice">Roll Dice</button></div>
+    <div class="stats">
+      <h4>Games Played:</h4>
+      <h4 id="games">00</h4>
+    </div>
+    <div class="play1W">
+      <h4>Player 2 Wins:</h4>
+      <h4 id="play1W">00</h4>
+    </div>
+    <div class="play2W">
+      <h4>Player 2 Wins:</h4>
+      <h4 id="play2W">00</h4>
+    </div>
+    <div class="playT">
+      <h4>Games Tied:</h4>
+      <h4 id="playT">00</h4>
+    </div>
+    <script src="./includes/dice.js"></script>
+  </body>
+</html>

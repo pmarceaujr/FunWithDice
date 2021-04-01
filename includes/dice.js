@@ -3,8 +3,14 @@ let totalGames = 0;
 let play1Wins = 0;
 let play2Wins = 0;
 let playTies = 0;
-
+let player1Name = prompt("Enter Player One's Name")
+let player2Name = prompt("Enter Player Two's Name")
+let player1NameH3 = document.body.querySelector('#play1');
+let player2NameH3 = document.body.querySelector('#play2');
+player1NameH3.innerHTML = player1Name
+player2NameH3.innerHTML = player2Name
 function rollDice() {
+
     totalGames++;
     let gamesPlayed = document.body.querySelector('#games');
     gamesPlayed.innerHTML = totalGames;
@@ -26,14 +32,14 @@ function rollDice() {
     }
     else if (dice1 < dice2) {
         let gameHeader = document.body.querySelector('h1');
-        gameHeader.innerHTML = "Player 2 Wins!";
+        gameHeader.innerHTML = `${player2Name} Wins!`;
         play2Wins++;
         let gamesP2Wins = document.body.querySelector('#play2W');
         gamesP2Wins.innerHTML = play2Wins;
     }
     else {
         let gameHeader = document.body.querySelector('h1');
-        gameHeader.innerHTML = "Player 1 Wins!";
+        gameHeader.innerHTML = `${player1Name} Wins!`;
         play1Wins++;
         let gamesP1Wins = document.body.querySelector('#play1W');
         gamesP1Wins.innerHTML = play1Wins;
